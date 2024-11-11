@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Birthday Cake Design</title>
+<style>
+  /* Page styling */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #B6E0F0;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Cake base styling */
+  .cake {
+    position: relative;
+    width: 240px;
+    height: 100px;
+    background-color: #4A4844;
+    border: 3px solid #000;
+    border-radius: 10px;
+  }
+
+  /* Layers of the cake */
+  .layer {
+    position: absolute;
+    width: 200px;
+    left: 20px;
+    border: 3px solid #000;
+    border-radius: 10px;
+  }
+
+  .layer1 { background-color: #C22146; height: 40px; top: -40px; }
+  .layer2 { background-color: #8CB06F; height: 30px; top: -70px; }
+  .layer3 { background-color: #FFFC63; height: 20px; top: -90px; }
+  .layer4 { background-color: #FC49A0; height: 20px; top: -110px; }
+
+  /* Toppings styling */
+  .topping {
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #000;
+  }
+  
+  .topping1 { background-color: #C20067; top: -130px; left: 30px; }
+  .topping2 { background-color: #FFFF00; top: -130px; left: 70px; }
+  .topping3 { background-color: #BBFFB5; top: -130px; left: 130px; }
+  .topping4 { background-color: #442F52; top: -130px; left: 180px; }
+  .topping5 { background-color: #FF00A2; top: -160px; left: 40px; }
+  .topping6 { background-color: #00FF51; top: -160px; left: 170px; }
+
+  /* Candle styling */
+  .candle {
+    position: absolute;
+    width: 15px;
+    height: 50px;
+    background-color: #FF4F4F;
+    border: 2px solid #000;
+    top: -180px;
+    left: 115px;
+  }
+
+  /* Candle flame (stick) styling */
+  .flame {
+    position: absolute;
+    width: 5px;
+    height: 10px;
+    background-color: #181A18;
+    top: -190px;
+    left: 120px;
+  }
+
+  /* Birthday message styling */
+  .message {
+    position: absolute;
+    top: -230px;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+  <div class="cake">
+    <div class="message">Happy Birthday Joe!</div>
+    <!-- Cake layers -->
+    <div class="layer layer1"></div>
+    <div class="layer layer2"></div>
+    <div class="layer layer3"></div>
+    <div class="layer layer4"></div>
+
+    <!-- Toppings -->
+    <div class="topping topping1"></div>
+    <div class="topping topping2"></div>
+    <div class="topping topping3"></div>
+    <div class="topping topping4"></div>
+    <div class="topping topping5"></div>
+    <div class="topping topping6"></div>
+
+    <!-- Candle and flame -->
+    <div class="candle"></div>
+    <div class="flame"></div>
+  </div>
+</body>
+</html>
